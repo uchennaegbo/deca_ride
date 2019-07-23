@@ -2,7 +2,7 @@
   "name": "decarides-service",
   "version": "1.0.0",
   "main": "bin/www",
-  "author": "Bond <dammyakinmade@gmail.com>",
+  "author": "Uche <egbouchenna001@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
