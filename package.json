@@ -8,7 +8,7 @@
   "scripts": {
     "postinstall": "tsc",
     "start": "bin/www",
-    "client:start": "cd client; npm start",
+    "client:start": "cd client; yarn start",
     "test": "jest"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "express-graphql": "0.8.0",
     "graphql": "14.3.1",
     "http-errors": "1.7.3",
+    "jest": "24.7.1",
     "morgan": "1.9.1",
     "pm2": "3.5.1"
   },
@@ -35,7 +36,6 @@
     "@types/node": "10.14.10",
     "@types/supertest": "2.0.7",
     "husky": "2.5.0",
-    "jest": "24.8.0",
     "prettier": "1.16.4",
     "pretty-quick": "1.10.0",
     "supertest": "4.0.2",
