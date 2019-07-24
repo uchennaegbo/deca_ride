@@ -4,7 +4,7 @@ import Header from './Header/Header';
 import Home from './Homepage/Home';
 import Dashboard from './Dashboard/Dashboard';
 import Driver from './Drivers/Drivers';
-import Trip from './Trips/trips';
+import Trip from './Trips/Trips';
 import './App.css';
 
 function App() {
