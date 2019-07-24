@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Drivers.css';
 import avatar from '../Dashboard/avatar.png';
 import axios from 'axios';
-import { NavLink } from 'react-router-dom';
 
 const Driver = () => {
   const [drivers, setDriver] = useState([]);
@@ -34,7 +33,7 @@ const Driver = () => {
   return (
     <div className="dashboard-view">
       <div className="aside-view">
-        <h3>Dashboard</h3>
+        <h3>Drivers</h3>
 
         {drivers.map(driver => (
           <div
@@ -43,14 +42,7 @@ const Driver = () => {
             onClick={handleDriverClick}
             className="views"
           >
-            <NavLink
-              activeStyle="active"
-              to={driver.driverID}
-              id={driver.driverID}
-            >
-              {' '}
-              {driver.name}
-            </NavLink>
+            {driver.name}
           </div>
         ))}
       </div>
