@@ -1,0 +1,109 @@
+.dashboard-view {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-family: Lato;
+}
+
+.aside-view {
+  height: auto;
+  width: 20%;
+  margin: 2px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.56);
+  box-sizing: border-box;
+  color: #fd8805;
+  outline: none;
+  font-size: 20px;
+  background: #0d1d22;
+}
+
+.main-view {
+  height: auto;
+  width: 79%;
+  margin: 2px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.56);
+  box-sizing: border-box;
+  background-color: #1b3033;
+  color: #fd8805;
+  font-size: 20px;
+  outline: none;
+}
+
+.dcharts {
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dpersonal {
+  display: block;
+  text-align: center;
+  box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.56);
+  height: 100%;
+  width: 100%;
+  margin: 3px;
+  background: #101a1d;
+}
+
+.dpersonal:hover {
+  opacity: 0.898;
+}
+
+.dcontact {
+  display: block;
+  text-align: center;
+  box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.56);
+  height: 100%;
+  width: 100%;
+  margin: 3px;
+  background: #131f0f;
+}
+
+.dcontact:hover {
+  opacity: 0.898;
+}
+
+.dinfo {
+  text-align: center;
+  height: 50%;
+  box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.56);
+  padding: 3px;
+  margin: 3px;
+  background: #052933;
+}
+
+.dinfo:hover {
+  opacity: 0.898;
+}
+
+.views {
+  border: 1px solid whitesmoke;
+  width: 90%;
+  padding: 12px 18px;
+}
+
+.views:hover {
+  background-color: #0529333d;
+  opacity: 0.79;
+}
+
+.active {
+  margin-top: 0;
+  color: white;
+  border-bottom: 3px solid yellow;
+  transition: all ease-in-out 500ms;
+}
