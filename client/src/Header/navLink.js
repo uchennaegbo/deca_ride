@@ -6,8 +6,7 @@ export default function Navlink(props) {
     <>
       <li id={props.id}>
         <NavLink to={props.to} className={props.class}>
-          {' '}
-          {props.text}{' '}
+          {props.text}
         </NavLink>
       </li>
     </>
