@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Navlink from './navLink';
 import { FaGithubAlt, FaSlack, FaTwitter } from 'react-icons/fa';
 import './Header.css';
@@ -8,9 +9,9 @@ export default function Header() {
     <div>
       <nav id="scotchy-nav" className="navbar is-dark">
         <div className="navbar-item">
-          <Navlink activeClassName="active" to="/home">
+          <NavLink activeClassName="active" to="/home">
             Decagon
-          </Navlink>
+          </NavLink>
         </div>
         <ul>
           <Navlink
