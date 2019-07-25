@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Drivers.css';
 import avatar from '../Dashboard/avatar.png';
+import avatar_f from './avatar_f.png';
 import axios from 'axios';
 
 const Driver = () => {
@@ -21,6 +22,15 @@ const Driver = () => {
       driver => driver.driverID === e.target.id,
     );
     setDriverState(driverDetails[0]);
+
+    const driverLists = document.querySelectorAll('.dviews');
+    drivers.map((driver, index) => {
+      if (driver.driverID !== e.target.id) {
+        return driverLists[index].classList.remove('dactive');
+      } else {
+        return driverLists[index].classList.add('dactive');
+      }
+    });
     console.log(driverDetails);
   };
 
@@ -40,7 +50,7 @@ const Driver = () => {
             key={driver.driverID}
             id={driver.driverID}
             onClick={handleDriverClick}
-            className="views"
+            className="dviews"
           >
             {driver.name}
           </div>
@@ -51,7 +61,11 @@ const Driver = () => {
           <div className="dcharts">
             <div className="dpersonal">
               <h2> Personal Details</h2>
-              <img src={avatar} alt="avatar" className="avatar" />
+              <img
+                src={driverState.gender === 'male' ? avatar : avatar_f}
+                alt="avatar"
+                className="avatar"
+              />
               <p>Name: {driverState.name}</p>
 
               <p>
