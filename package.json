@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "postinstall": "tsc",
+    "build": "./upstart.sh",
     "start": "bin/www",
     "client:start": "cd client; yarn start",
     "test": "jest"
